@@ -1,0 +1,96 @@
+:root {
+  --blue1: #002eff;
+  --blue2: #2400ff;
+  --pink1: #ff00c6;
+  --pink2: #ca00ff;
+  --leela: #7700ff;
+}
+
+.header {
+  font-size: 2rem;
+}
+
+.todoContainer {
+  width: 500px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.todoCreateForm {
+  display: flex;
+  gap: 5px;
+}
+
+.todoInput {
+  flex-grow: 1;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: solid 1px var(--blue1);
+}
+.buttonCreate {
+  border: none;
+  border-radius: 3px;
+  background: linear-gradient(to top, var(--blue1), var(--pink1));
+  color: white;
+  padding: 10px 20px;
+}
+
+.buttonCreate:hover {
+  background: linear-gradient(to top, var(--pink1), var(--blue1));
+  box-shadow: 2px 9px 36px 0px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.todosContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.todo {
+  padding: 10px;
+  background-color: white;
+}
+
+.todoTitle {
+  flex: 1;
+  font-size: 20px;
+}
+
+.todoUpdateForm,
+.todoInfo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.button {
+  border: none;
+  border-radius: 3px;
+  background: linear-gradient(to top, var(--blue1), var(--blue2));
+  color: white;
+  padding: 10px 20px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: linear-gradient(to top, var(--blue2), var(--blue1));
+  box-shadow: 2px 9px 36px 0px rgba(158, 163, 8, 0.6);
+}
+.button1 {
+  border: none;
+  border-radius: 3px;
+  background: linear-gradient(to top, var(--pink1), var(--pink2));
+  color: white;
+  padding: 10px 20px;
+}
+
+.button1:hover {
+  cursor: pointer;
+  background: linear-gradient(to top, var(--pink2), var(--pink1));
+  box-shadow: 2px 9px 36px 0px rgba(95, 10, 14, 0.6);
+}
